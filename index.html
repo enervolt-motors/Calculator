@@ -360,38 +360,36 @@
     <script>
         const motorKits = {
             "70": [
-                { name: "1000w (Speed 60km/h)", power: "1000w", price: 60000 },
-                { name: "1500w Drum (Speed 70-80km/h)", power: "1500w", price: 70000 },
-                { name: "1500w Disc (Speed 70-80km/h)", power: "1500w", price: 80000 },
-                { name: "2000w Disc (Speed 90-100km/h)", power: "2000w", price: 88000 },
-                { name: "1500w Alloy rim (Speed 80km/h)", power: "1500w Alloy rim", price: 105000 }
+                { name: "1000w (Speed 55-60km/h)", power: "1000w", price: 60000 },
+                { name: "1500w Drum (Speed 70-75km/h)", power: "1500w", price: 70000 },
+                { name: "1500w Disc (Speed 70-75km/h)", power: "1500w", price: 80000 },
+                { name: "2000w Disc (Speed 80-85km/h)", power: "2000w", price: 88000 },
+                { name: "1500w Alloy rim (Speed 70-75km/h)", power: "1500w Alloy rim", price: 105000 },
+                { name: "2000w Alloy rim (Speed 90-95km/h)", power: "2000w Alloy rim", price: 120000 }
             ],
             "100": [
-                { name: "1500w Drum (Speed 70-80km/h)", power: "1500w", price: 70000 },
-                { name: "1500w Disc (Speed 70-80km/h)", power: "1500w", price: 80000 },
-                { name: "2000w Disc (Speed 90-100km/h)", power: "2000w", price: 88000 },
-                { name: "1500w Alloy rim (Speed 70-80km/h)", power: "1500w Alloy rim", price: 105000 },
-                { name: "2000w Alloy rim (Speed 90-100km/h)", power: "2000w Alloy rim", price: 120000 },
+                { name: "1500w Disc (Speed 70-75km/h)", power: "1500w", price: 80000 },
+                { name: "2000w Disc (Speed 80-85km/h)", power: "2000w", price: 88000 },
+                { name: "1500w Alloy rim (Speed 70-75km/h)", power: "1500w Alloy rim", price: 105000 },
+                { name: "2000w Alloy rim (Speed 90-95km/h)", power: "2000w Alloy rim", price: 120000 },
                 { name: "3000w Alloy rim (Speed 110-120km/h)", power: "3000w Alloy rim", price: 140000 }
             ],
             "110": [
-                { name: "1500w Drum (Speed 70-80km/h)", power: "1500w", price: 70000 },
-                { name: "1500w Disc (Speed 70-80km/h)", power: "1500w", price: 80000 },
-                { name: "2000w Disc (Speed 90-100km/h)", power: "2000w", price: 88000 },
-                { name: "1500w Alloy rim (Speed 70-80km/h)", power: "1500w Alloy rim", price: 105000 },
-                { name: "2000w Alloy rim (Speed 90-100km/h)", power: "2000w Alloy rim", price: 120000 },
-                { name: "3000w Alloy rim (Speed 110-120km/h)", power: "3000w Alloy rim", price: 140000 }
-            ],
+                { name: "1500w Disc (Speed 70-75km/h)", power: "1500w", price: 80000 },
+                { name: "2000w Disc (Speed 80-85km/h)", power: "2000w", price: 88000 },
+                { name: "1500w Alloy rim (Speed 70-75km/h)", power: "1500w Alloy rim", price: 105000 },
+                { name: "2000w Alloy rim (Speed 90-95km/h)", power: "2000w Alloy rim", price: 120000 },
+                { name: "3000w Alloy rim (Speed 110-120km/h)", power: "3000w Alloy rim", price: 140000 }            ],
             "125": [
-                { name: "1500w Drum (Speed 70-80km/h)", power: "1500w", price: 70000 },
-                { name: "1500w Disc (Speed 70-80km/h)", power: "1500w", price: 80000 },
-                { name: "2000w Disc (Speed 90-100km/h)", power: "2000w", price: 88000 },
-                { name: "1500w Alloy rim (Speed 70-80km/h)", power: "1500w Alloy rim", price: 105000 },
-                { name: "2000w Alloy rim (Speed 90-100km/h)", power: "2000w Alloy rim", price: 120000 },
+                { name: "1500w Drum (Speed 70-75km/h)", power: "1500w", price: 70000 },
+                { name: "1500w Disc (Speed 70-75km/h)", power: "1500w", price: 80000 },
+                { name: "2000w Disc (Speed 80-85km/h)", power: "2000w", price: 88000 },
+                { name: "1500w Alloy rim (Speed 70-75km/h)", power: "1500w Alloy rim", price: 105000 },
+                { name: "2000w Alloy rim (Speed 90-95km/h)", power: "2000w Alloy rim", price: 120000 },
                 { name: "3000w Alloy rim (Speed 110-120km/h)", power: "3000w Alloy rim", price: 140000 }
             ],
             "150": [
-                { name: "2000w Alloy rim (Speed 90-100km/h)", power: "2000w Alloy rim", price: 120000 },
+                { name: "2000w Alloy rim (Speed 90-95km/h)", power: "2000w Alloy rim", price: 120000 },
                 { name: "3000w Alloy rim (Speed 110-120km/h)", power: "3000w Alloy rim", price: 140000 }
             ],
             "200": [
@@ -436,8 +434,16 @@
                 { specs: "72v 100Ah", range: "300km/Charge", price: 317000 }
             ],
             "2000w": [
+                { specs: "63v 40Ah", range: "100km/Charge", price: 110000 },
+                { specs: "63v 50Ah", range: "125km/Charge", price: 139000 },
+                { specs: "63v 60Ah", range: "150km/Charge", price: 167000 },
+                { specs: "63v 70Ah", range: "170km/Charge", price: 194000 },
+                { specs: "63v 80Ah", range: "200km/Charge", price: 222000 },
+                { specs: "63v 90Ah", range: "220km/Charge", price: 250000 },
+                { specs: "63v 100Ah", range: "240km/Charge", price: 277000 },
+                { specs: "72v 30Ah", range: "90km/Charge", price: 98000 },
                 { specs: "72v 40Ah", range: "120km/Charge", price: 127000 },
-                { specs: "72v 50Ah", range: "140km/Charge", price: 159000 },
+                { specs: "72v 50Ah", range: "150km/Charge", price: 159000 },
                 { specs: "72v 60Ah", range: "180km/Charge", price: 190000 },
                 { specs: "72v 70Ah", range: "210km/Charge", price: 222000 },
                 { specs: "72v 80Ah", range: "240km/Charge", price: 254000 },
@@ -463,7 +469,14 @@
                 { specs: "72v 100Ah", range: "300km/Charge", price: 317000 }
             ],
             "2000w Alloy rim": [
-                { specs: "72v 40Ah", range: "125km/Charge", price: 127000 },
+                { specs: "63v 40Ah", range: "100km/Charge", price: 110000 },
+                { specs: "63v 50Ah", range: "125km/Charge", price: 139000 },
+                { specs: "63v 60Ah", range: "150km/Charge", price: 167000 },
+                { specs: "63v 70Ah", range: "170km/Charge", price: 194000 },
+                { specs: "63v 80Ah", range: "200km/Charge", price: 222000 },
+                { specs: "63v 90Ah", range: "220km/Charge", price: 250000 },
+                { specs: "63v 100Ah", range: "240km/Charge", price: 277000 },
+                { specs: "72v 40Ah", range: "120km/Charge", price: 127000 },
                 { specs: "72v 50Ah", range: "150km/Charge", price: 159000 },
                 { specs: "72v 60Ah", range: "180km/Charge", price: 190000 },
                 { specs: "72v 70Ah", range: "210km/Charge", price: 222000 },
